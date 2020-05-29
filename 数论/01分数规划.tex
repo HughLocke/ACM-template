@@ -1,0 +1,7 @@
+
+如一个物品有成本bi和价值ai的时候,我们需要一种方案使得取K的物品之后价值和成本的比例最高
+\begin{displaymath}
+R=\sum \frac{{a}_{i}*{x}_{i}}{{b}_{i}*{x}_{i}}
+\end{displaymath}
+形如式子中选定每个xi的值为0/1,最终使得R最大\\
+解:二分出答案t按来代入式子取check,每次选取ai - bi * t最大的K个物品,如果最终∑ai - bi * t >= 0,说明答案t可行
